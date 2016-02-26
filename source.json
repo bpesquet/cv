@@ -96,13 +96,14 @@
       {
         "employer": "Education Nationale",
         "position": "Enseignant en informatique",
-        "summary": "Professeur en BTS IG puis SIO option SLAM : bases de la programmation, programmation orientée objet, développement Web et mobile, projet logiciel.",
+        "summary": "Professeur en BTS IG puis BTS SIO option SLAM : bases de la programmation, programmation orientée objet, développement Web et mobile, projet logiciel, bases de données.",
         "start": "2006-09",
-        "highlights": ["Lauréat du CAPET en 2005",
-          "Major de l'agrégation en 2008", 
+        "highlights": ["Etablissements : [lycée Mathias](http://www.lycee-mathias.fr/) à Chalon sur Saône en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) à Laval  de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) à Lyon depuis 2009",
+          "Major de l'agrégation en 2008",
+          "Intervenant en école d'ingénieurs à [Poytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Ssiences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
           "Formateur académique depuis 2014", 
-          "Membre du jury du CAPET interne depuis 2016", 
-          "Intervenant en école d'ingénieurs à [Poytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Ssiences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009/2010"]
+          "Membre du jury du CAPET interne depuis 2016" 
+          ]
       },
 
       {
