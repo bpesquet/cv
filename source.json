@@ -5,7 +5,7 @@
   "info": {
     "label": "Enseignant en informatique",
     "characterClass": "Teacher",
-    "brief": "Ingénieur et professeur agrégé d'informatique, j'enseigne en BTS SIO et en école d'ingénieurs à Lyon. Je suis également formateur académique et auteur de cours en ligne."
+    "brief": "Ingénieur et professeur agrégé d'informatique, j'enseigne en BTS SIO et en école d'ingénieurs à Lyon."
   },
 
   "contact": {
@@ -78,7 +78,7 @@
         "name": "Réseau",
         "level": "intermediate",
         "skills": [
-          "OSI", "Ethernet", "TCP/IP", "xDSL", "Cryptographie"
+          "OSI", "Ethernet", "TCP/IP"
         ]
       }
     ],
@@ -100,7 +100,7 @@
         "start": "2006-09",
         "highlights": ["Etablissements : [lycée Mathias](http://www.lycee-mathias.fr/) à Chalon sur Saône en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) à Laval  de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) à Lyon depuis 2009",
           "Major de l'agrégation en 2008",
-          "Intervenant en école d'ingénieurs à [Poytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Ssiences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
+          "Intervenant à [Poytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Ssiences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
           "Formateur académique depuis 2014", 
           "Membre du jury du CAPET interne depuis 2016" 
           ]
