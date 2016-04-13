@@ -96,13 +96,15 @@
       {
         "employer": "Education Nationale",
         "position": "Enseignant en informatique",
-        "summary": "Professeur en BTS IG puis BTS SIO option SLAM : bases de la programmation, programmation orientée objet, architecture logicielle, développement Web et mobile, bases de données.",
+        "summary": "Principaux enseignements : bases de la programmation, programmation orientée objet, architecture logicielle, développement Web et mobile, bases de données.",
         "start": "2006-09",
-        "highlights": ["Etablissements : [lycée Mathias](http://www.lycee-mathias.fr/) à Chalon sur Saône en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) à Laval  de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) à Lyon depuis 2009",
-          "Major de l'agrégation en 2008",
+        "highlights": [
+          "Lauréat du CAPET externe économie/gestion option informatique en 2005",
+          "Professeur en BTS Informatique de Gestion puis BTS Services Informatiques aux Organisations option SLAM : [lycée Mathias](http://www.lycee-mathias.fr/) en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) depuis 2009",
+          "Major de l'agrégation externe économie/gestion option informatique en 2008",
           "Intervenant à [Poytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Ssiences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
-          "Formateur académique depuis 2014", 
-          "Membre du jury du CAPET interne depuis 2016" 
+          "Formateur académique depuis 2014",
+          "Membre du jury du CAPET interne économie/gestion option informatique depuis 2016"
           ]
       },
 
@@ -113,9 +115,9 @@
         "summary": "Fonctions occupées : développeur, concepteur, architecte logiciel, responsable technique, chef de projet.",
         "start": "1999-09",
         "end": "2006-08",
-        "highlights": ["[Alcatel Space](https://www.alcatel-lucent.com/fr) - projets LMO2 et eCMS : test de charge utile satellite, supervision de trafic antenne", 
-          "[Airbus](http://www.airbus.com/) - projet TARDIS : gestion des données de soufflerie avion", 
-          "[Astrium](http://www.space-airbusds.com/) - projets BIBOG, SIFEC et SOC : composants du centre de contrôle du satellite Hélios II"]
+        "highlights": ["Pour [Alcatel Space](https://www.alcatel-lucent.com/fr) : projets LMO2 et eCSM, test de charge utile satellite et supervision de trafic antenne",
+          "Pour [Airbus](http://www.airbus.com/) : projet TARDIS, gestion des données de soufflerie avion",
+          "Pour [Astrium](http://www.space-airbusds.com/) : projets BIBOG, SIFEC et SOC, composants du centre de contrôle du satellite Hélios II"]
       }
     ]
 
@@ -139,9 +141,9 @@
         "start": "1996-09",
         "end": "1999-07",
         "summary": "",
-        "curriculum": ["École d’ingénieurs recrutant sur le concours Mines-Telecom", 
+        "curriculum": ["École d’ingénieurs recrutant sur le concours Mines-Telecom",
           "Spécialisations en développement objet et intelligence artificielle",
-          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés"]
+          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés et participation à la [RoboCup](http://www.robocup.org/)"]
       },
 
       {
@@ -157,13 +159,13 @@
 
       {
         "institution": "Lycée Jehan Ango",
-        "studyType": "Baccalauréat C",
+        "studyType": "Terminale scientifique",
         "url": "http://ango-lyc.spip.ac-rouen.fr",
         "area": "Dieppe, FR",
-        "start": "1992-09",
+        "start": "1993-09",
         "end": "1994-07",
         "summary": "",
-        "curriculum": ["Mention Bien"]
+        "curriculum": ["Baccalauréat C obtenu avec mention Bien"]
       }
     ]
 
@@ -211,7 +213,7 @@
         "name": "GitBook",
         "url": "https://gitbook.com"
       },
-      "url": "https://www.gitbook.com/book/bpesquet/guide-developpeur-php/details",
+      "url": "https://www.gitbook.com/book/bpesquet/programmation-orientee-objet-csharp/details",
       "summary": ""
     }
   ]
