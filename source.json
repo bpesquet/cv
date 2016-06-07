@@ -169,54 +169,7 @@
       }
     ]
 
-  },
-
-  "writing": [
-    {
-      "title": "Guide du développeur PHP",
-      "category": "book",
-      "date": "2016-01",
-      "publisher": {
-        "name": "GitBook",
-        "url": "https://gitbook.com"
-      },
-      "url": "https://www.gitbook.com/book/bpesquet/guide-developpeur-php/details",
-      "summary": ""
-    },
-    {
-      "title": "Apprenez à coder avec JavaScript",
-      "category": "article",
-      "date": "2015-10",
-      "publisher": {
-        "name": "OpenClassrooms",
-        "url": "https://www.openclassrooms.com"
-      },
-      "url": "https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript",
-      "summary": ""
-    },
-    {
-      "title": "Evoluez vers une architecture PHP professionnelle",
-      "category": "article",
-      "date": "2015-02",
-      "publisher": {
-        "name": "OpenClassrooms",
-        "url": "https://www.openclassrooms.com"
-      },
-      "url": "https://openclassrooms.com/courses/evoluez-vers-une-architecture-php-professionnelle",
-      "summary": ""
-    },
-    {
-      "title": "Programmation orientée objet en C#",
-      "category": "book",
-      "date": "2014-02",
-      "publisher": {
-        "name": "GitBook",
-        "url": "https://gitbook.com"
-      },
-      "url": "https://www.gitbook.com/book/bpesquet/programmation-orientee-objet-csharp/details",
-      "summary": ""
-    }
-  ]
+  }
 
 
 }
