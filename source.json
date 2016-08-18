@@ -5,7 +5,7 @@
   "info": {
     "label": "Enseignant en informatique",
     "characterClass": "Teacher",
-    "brief": "Ingénieur et professeur agrégé d'informatique, j'enseigne en BTS SIO et en école d'ingénieurs à Lyon."
+    "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et ses applications à l'[Ecole Nationale Supérieure de Cognitique](http://www.ensc.fr)."
   },
 
   "contact": {
@@ -14,9 +14,9 @@
   },
 
   "location": {
-    "address": "6 rue Perrod",
-    "city": "Lyon",
-    "code": "69004",
+    "address": "50 avenue du Maréchal Joffre",
+    "city": "Mérignac",
+    "code": "33700",
     "country": "FR"
   },
 
@@ -98,6 +98,7 @@
         "position": "Enseignant en informatique",
         "summary": "Principaux enseignements : bases de la programmation, programmation orientée objet, architecture logicielle, développement Web et mobile, bases de données.",
         "start": "2006-09",
+        "end": "2016-08",
         "highlights": [
           "Lauréat du CAPET externe économie/gestion option informatique en 2005",
           "Professeur en BTS Informatique de Gestion puis BTS Services Informatiques aux Organisations option SLAM : [lycée Mathias](http://www.lycee-mathias.fr/) en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) depuis 2009",
