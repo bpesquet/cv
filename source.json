@@ -94,6 +94,14 @@
     "history": [
 
       {
+        "employer": "Ecole Nationale Supérieure de Cognitique",
+        "url": "http://www.ensc.fr",
+        "position": "Enseignant en informatique",
+        "summary": "Principaux enseignements : bases de la programmation, programmation avancée, génie logiciel.",
+        "start": "2016-09"
+      },
+
+      {
         "employer": "Education Nationale",
         "position": "Enseignant en informatique",
         "summary": "Principaux enseignements : bases de la programmation, programmation orientée objet, architecture logicielle, développement Web et mobile, bases de données.",
