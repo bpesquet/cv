@@ -1,25 +1,20 @@
 {
-
   "name": "Baptiste Pesquet",
-
   "info": {
     "label": "Enseignant en informatique",
     "characterClass": "Teacher",
-    "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et ses applications à l'[Ecole Nationale Supérieure de Cognitique](http://www.ensc.fr)."
+    "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et ses applications à l'[Ecole Nationale Supérieure de Cognitique](https://ensc.bordeaux-inp.fr/fr)."
   },
-
   "contact": {
-    "website": "http://bpesquet.fr",
+    "website": "http://bpesquet.com",
     "email": "bpesquet@gmail.com"
   },
-
   "location": {
     "address": "",
     "city": "Bordeaux",
     "code": "33000",
     "country": "FR"
   },
-
   "social": [
     {
       "label": "GitHub",
@@ -27,7 +22,6 @@
       "user": "bpesquet",
       "url": "https://github.com/bpesquet"
     },
-
     {
       "label": "Twitter",
       "network": "Twitter",
@@ -35,72 +29,86 @@
       "url": "https://twitter.com/bpesquet"
     }
   ],
-
-"skills": {
-
+  "skills": {
     "sets": [
       {
         "name": "Programmation",
         "level": "master",
         "skills": [
-          "Java", "C#", "C++", "UML", "Design Patterns", "Multithreading"
+          "Java",
+          "C#",
+          "C++",
+          "UML",
+          "Design Patterns",
+          "Multithreading"
         ]
       },
       {
         "name": "Web",
         "level": "advanced",
         "skills": [
-          "JavaScript", "PHP", "HTML", "CSS", "Bootstrap", "Silex", "Symfony"
+          "JavaScript",
+          "PHP",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Silex",
+          "Symfony"
         ]
       },
       {
         "name": "Mobile",
         "level": "beginner",
         "skills": [
-          "Cordova", "Android"
+          "Cordova",
+          "Android"
         ]
       },
       {
         "name": "Données",
         "level": "intermediate",
         "skills": [
-          "SQL92", "ORACLE", "MySQL", "PostgreSQL", "ORM", "Hibernate"
+          "SQL92",
+          "ORACLE",
+          "MySQL",
+          "PostgreSQL",
+          "ORM",
+          "Hibernate"
         ]
       },
       {
         "name": "Projet",
         "level": "intermediate",
         "skills": [
-          "Agilité", "SCRUM", "Git", "GitHub", "TFS"
+          "Agilité",
+          "SCRUM",
+          "Git",
+          "GitHub",
+          "TFS"
         ]
       },
       {
         "name": "Réseau",
         "level": "intermediate",
         "skills": [
-          "OSI", "Ethernet", "TCP/IP"
+          "OSI",
+          "Ethernet",
+          "TCP/IP"
         ]
       }
     ],
-
-    "list": [
-    ]
+    "list": []
   },
-
   "employment": {
-
     "summary": "",
-
     "history": [
-
       {
         "employer": "Ecole Nationale Supérieure de Cognitique",
-        "url": "http://www.ensc.fr",
+        "url": "https://ensc.bordeaux-inp.fr/fr",
         "position": "Enseignant en informatique",
         "summary": "Principaux enseignements : bases de la programmation, programmation avancée, génie logiciel.",
         "start": "2016-09"
       },
-
       {
         "employer": "Education Nationale",
         "position": "Enseignant en informatique",
@@ -114,9 +122,8 @@
           "Intervenant à [Polytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Sciences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
           "Formateur académique depuis 2014",
           "Membre du jury du CAPET interne économie/gestion option informatique depuis 2016"
-          ]
+        ]
       },
-
       {
         "employer": "Artal",
         "url": "http://www.artal.fr/",
@@ -124,24 +131,19 @@
         "summary": "Fonctions occupées : développeur, concepteur, architecte logiciel, responsable technique, chef de projet.",
         "start": "1999-09",
         "end": "2006-08",
-        "highlights": ["Pour [Alcatel Space](https://www.alcatel-lucent.com/fr) : projets LMO2 et eCSM, test de charge utile satellite et supervision de trafic antenne",
+        "highlights": [
+          "Pour [Alcatel Space](https://www.alcatel-lucent.com/fr) : projets LMO2 et eCSM, test de charge utile satellite et supervision de trafic antenne",
           "Pour [Airbus](http://www.airbus.com/) : projet TARDIS, gestion des données de soufflerie avion",
-          "Pour [Astrium](http://www.space-airbusds.com/) : projets BIBOG, SIFEC et SOC, composants du centre de contrôle du satellite Hélios II"]
+          "Pour [Astrium](http://www.space-airbusds.com/) : projets BIBOG, SIFEC et SOC, composants du centre de contrôle du satellite Hélios II"
+        ]
       }
     ]
-
   },
-
   "education": {
-
     "summary": "",
-
     "level": "degree",
-
     "degree": "BSCS",
-
     "history": [
-
       {
         "institution": "ENSIIE",
         "studyType": "Ingénieur en informatique",
@@ -150,11 +152,12 @@
         "start": "1996-09",
         "end": "1999-07",
         "summary": "",
-        "curriculum": ["École d’ingénieurs recrutant sur le concours Mines-Telecom",
+        "curriculum": [
+          "École d’ingénieurs recrutant sur le concours Mines-Telecom",
           "Spécialisations en développement objet et intelligence artificielle",
-          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés et participation à la [RoboCup](http://www.robocup.org/)"]
+          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés et participation à la [RoboCup](http://www.robocup.org/)"
+        ]
       },
-
       {
         "institution": "Lycée Pierre Corneille",
         "studyType": "Classes préparatoires aux grandes écoles",
@@ -163,9 +166,10 @@
         "start": "1994-09",
         "end": "1996-07",
         "summary": "",
-        "curriculum": ["Math Sup / Math Spé M"]
+        "curriculum": [
+          "Math Sup / Math Spé M"
+        ]
       },
-
       {
         "institution": "Lycée Jehan Ango",
         "studyType": "Terminale scientifique",
@@ -174,11 +178,10 @@
         "start": "1993-09",
         "end": "1994-07",
         "summary": "",
-        "curriculum": ["Baccalauréat C obtenu avec mention Bien"]
+        "curriculum": [
+          "Baccalauréat C obtenu avec mention Bien"
+        ]
       }
     ]
-
   }
-
-
 }
