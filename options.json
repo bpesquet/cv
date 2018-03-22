@@ -2,7 +2,8 @@
   "sectionTitles": {
     "info": "A propos",
     "employment": "Expérience",
-    "skills": "Compétences",
-    "education": "Formation"
+    "skills": "Compétences techniques",
+    "education": "Formation",
+    "projects": "Projets"
   }
 }

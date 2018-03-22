@@ -1,13 +1,17 @@
 {
   "name": "Baptiste Pesquet",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
   "info": {
-    "label": "Enseignant en informatique",
+    "label": "Ingénieur et enseignant en informatique",
     "characterClass": "Teacher",
-    "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et ses applications à l'[Ecole Nationale Supérieure de Cognitique](https://ensc.bordeaux-inp.fr/fr)."
+    "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et l'intelligence artificielle à l'[Ecole Nationale Supérieure de Cognitique](https://ensc.bordeaux-inp.fr/fr)."
   },
   "contact": {
-    "website": "http://bpesquet.com",
-    "email": "bpesquet@gmail.com"
+    "website": "http://bpesquet.fr",
+    "email": "baptiste.pesquet [at] ensc.fr"
   },
   "location": {
     "address": "",
@@ -32,52 +36,55 @@
   "skills": {
     "sets": [
       {
-        "name": "Programmation",
+        "name": "IA et Data Science",
+        "level": "intermediate",
+        "skills": [
+          "Machine Learning",
+          "Réseaux de neurones",
+          "Deep Learning",
+          "Python",
+          "NumPy",
+          "Keras"
+        ]
+      },
+      {
+        "name": "Développement logiciel",
         "level": "master",
         "skills": [
-          "Java",
           "C#",
+          "Java",
           "C++",
           "UML",
           "Design Patterns",
+          "ORM",
           "Multithreading"
         ]
       },
       {
-        "name": "Web",
+        "name": "Web et mobile",
         "level": "advanced",
         "skills": [
           "JavaScript",
+          "Node.js",
+          "React.js",
+          "React Native",
           "PHP",
           "HTML",
-          "CSS",
-          "Bootstrap",
-          "Silex",
-          "Symfony"
+          "CSS"
         ]
       },
       {
-        "name": "Mobile",
-        "level": "beginner",
-        "skills": [
-          "Cordova",
-          "Android"
-        ]
-      },
-      {
-        "name": "Données",
+        "name": "Base de données",
         "level": "intermediate",
         "skills": [
           "SQL92",
           "ORACLE",
           "MySQL",
-          "PostgreSQL",
-          "ORM",
-          "Hibernate"
+          "PostgreSQL"
         ]
       },
       {
-        "name": "Projet",
+        "name": "Gestion de projet",
         "level": "intermediate",
         "skills": [
           "Agilité",
@@ -88,12 +95,15 @@
         ]
       },
       {
-        "name": "Réseau",
+        "name": "Réseau et système",
         "level": "intermediate",
         "skills": [
-          "OSI",
+          "TCP/IP",
           "Ethernet",
-          "TCP/IP"
+          "OSI",
+          "Windows",
+          "OS X",
+          "Linux"
         ]
       }
     ],
@@ -103,63 +113,87 @@
     "summary": "",
     "history": [
       {
-        "employer": "Ecole Nationale Supérieure de Cognitique",
+        "employer": "ENSC - Bordeaux INP",
         "url": "https://ensc.bordeaux-inp.fr/fr",
-        "position": "Enseignant en informatique",
-        "summary": "Principaux enseignements : bases de la programmation, programmation avancée, génie logiciel.",
-        "start": "2016-09"
+        "position": "Enseignant en informatique et intelligence artificielle",
+        "summary": "Conception et animation de cours, accompagnement pédagogique, suivi de stages et de projets.",
+        "start": "2016-09",
+        "highlights": [
+          "Porteur d'un projet de plate-forme pédagogique sur le Deep Learning soutenu par l'INP en 2018.",
+          "Co-responsable de la semaine de spécialisation en IA depuis 2018.",
+          "Pilotage des modules Génie logiciel depuis 2017 et Développement mobile depuis 2018.",
+          "Responsable de la 2ème année depuis 2017."
+        ]
       },
       {
         "employer": "Education Nationale",
         "position": "Enseignant en informatique",
-        "summary": "Principaux enseignements : bases de la programmation, programmation orientée objet, architecture logicielle, développement Web et mobile, bases de données.",
+        "summary": "Professeur en BTS Informatique de Gestion puis en BTS Services Informatiques aux Organisations.",
         "start": "2006-09",
-        "end": "2016-08",
+        "end": "2016-09",
         "highlights": [
-          "Lauréat du CAPET externe économie/gestion option informatique en 2005",
-          "Professeur en BTS Informatique de Gestion puis BTS Services Informatiques aux Organisations option SLAM : [lycée Mathias](http://www.lycee-mathias.fr/) en 2006, [lycée Douanier Rousseau](http://douanier-rousseau.paysdelaloire.e-lyco.fr/) de 2007 à 2009, [lycée La Martinière Duchère](http://www.martiniere-duchere.fr/) depuis 2009",
-          "Major de l'agrégation externe économie/gestion option informatique en 2008",
-          "Intervenant à [Polytech Lyon](http://polytech.univ-lyon1.fr/) depuis 2009 et à [Sciences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009",
-          "Formateur académique depuis 2014",
-          "Membre du jury du CAPET interne économie/gestion option informatique depuis 2016"
+          "Membre du jury du CAPET interne économie/gestion option informatique depuis 2016.",
+          "Formateur académique sur les pédagogies actives et les outils numériques de 2014 à 2016.",
+          "Intervenant à [Polytech Lyon](http://polytech.univ-lyon1.fr/) de 2009 à 2016 et à [Sciences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009.",
+          "Major de l'agrégation externe économie/gestion option informatique en 2008.",
+          "Lauréat du CAPET externe économie/gestion option informatique en 2005."
         ]
       },
       {
-        "employer": "Artal",
+        "employer": "Artal Technologies",
         "url": "http://www.artal.fr/",
         "position": "Ingénieur informaticien",
-        "summary": "Fonctions occupées : développeur, concepteur, architecte logiciel, responsable technique, chef de projet.",
+        "summary": "Développeur, concepteur, architecte logiciel, responsable technique, chef de projet.",
         "start": "1999-09",
-        "end": "2006-08",
+        "end": "2006-09",
         "highlights": [
-          "Pour [Alcatel Space](https://www.alcatel-lucent.com/fr) : projets LMO2 et eCSM, test de charge utile satellite et supervision de trafic antenne",
-          "Pour [Airbus](http://www.airbus.com/) : projet TARDIS, gestion des données de soufflerie avion",
-          "Pour [Astrium](http://www.space-airbusds.com/) : projets BIBOG, SIFEC et SOC, composants du centre de contrôle du satellite Hélios II"
+          "[Alcatel Space](https://www.alcatel-lucent.com/fr) - projets LMO2 et eCSM : test de charge utile satellite et supervision de trafic antenne.",
+          "[Airbus](http://www.airbus.com/) - projet TARDIS : gestion des données de soufflerie avion.",
+          "[Astrium](http://www.space-airbusds.com/) - projets BIBOG, SIFEC et SOC : composants du centre de contrôle du satellite Hélios II."
         ]
       }
     ]
   },
+  "projects": [
+    {
+      "title": "Deep Learning Workshop",
+      "category": "FOSS",
+      "role": "Creator",
+      "url": "https://github.com/bpesquet/deep-learning-workshop",
+      "start": "2018-01",
+      "repo": "https://github.com/bpesquet/deep-learning-workshop",
+      "summary": "Atelier d'introduction au Deep Learning avec exercices autocorrectifs."
+    },
+    {
+      "title": "The JavaScript Way",
+      "category": "book",
+      "role": "Author",
+      "url": "https://github.com/bpesquet/thejsway",
+      "start": "2017-07",
+      "repo": "https://github.com/bpesquet/thejsway",
+      "summary": "Une introduction moderne à un langage essentiel."
+    }
+  ],
   "education": {
     "summary": "",
     "level": "degree",
     "degree": "BSCS",
     "history": [
       {
-        "institution": "ENSIIE",
+        "institution": "ENSIIE, Evry",
         "studyType": "Ingénieur en informatique",
         "url": "http://www.ensiie.fr",
         "area": "Evry, FR",
         "start": "1996-09",
         "end": "1999-07",
-        "summary": "",
-        "curriculum": [
-          "École d’ingénieurs recrutant sur le concours Mines-Telecom",
-          "Spécialisations en développement objet et intelligence artificielle",
-          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés et participation à la [RoboCup](http://www.robocup.org/)"
+        "summary": "École d’ingénieurs en informatique recrutant sur le concours Mines-Telecom.",
+        "highlights": [
+          "Spécialisations en développement objet et intelligence artificielle.",
+          "Stage de fin d'études effectué à l'[IRIT](https://www.irit.fr/) de Toulouse : création d'une équipe de robots footballeurs auto-organisés et participation à la [RoboCup 1999](http://www.robocup.org/)."
         ]
       },
       {
-        "institution": "Lycée Pierre Corneille",
+        "institution": "Lycée Pierre Corneille, Rouen",
         "studyType": "Classes préparatoires aux grandes écoles",
         "url": "http://lgcorneille-lyc.spip.ac-rouen.fr",
         "area": "Rouen, FR",
@@ -167,11 +201,11 @@
         "end": "1996-07",
         "summary": "",
         "curriculum": [
-          "Math Sup / Math Spé M"
+          "Math Sup / Math Spé M."
         ]
       },
       {
-        "institution": "Lycée Jehan Ango",
+        "institution": "Lycée Jehan Ango, Dieppe",
         "studyType": "Terminale scientifique",
         "url": "http://ango-lyc.spip.ac-rouen.fr",
         "area": "Dieppe, FR",
@@ -179,7 +213,7 @@
         "end": "1994-07",
         "summary": "",
         "curriculum": [
-          "Baccalauréat C obtenu avec mention Bien"
+          "Baccalauréat C obtenu avec mention Bien."
         ]
       }
     ]

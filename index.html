@@ -3,208 +3,554 @@
     
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Baptiste Pesquet</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css"
-        rel="stylesheet"></link>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-        rel="stylesheet"></link>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <style>
-            h3, h4, h5, h6 {
-              margin-top: 0;
+            * {
+              box-sizing: border-box;
             }
-          
-            .label {
+            
+            main {
+              display: block;
+            }
+            
+            body {
+              font-size: 15px;
+              color: #333;
+              line-height: 1.42857143;
+              background-color: #F0F0F0;
+              margin: 0;
+              padding: 0;
+              font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+            }
+            
+            /* Typical page borders are awkward when rendered to PDF. */
+            body.pdf {
+              background-color: #FFFFFF;
+            }
+            
+            /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
+            the PDF case, <main> for the HTML case, and style both via an ID. */
+            #main {
+              background-color: #FFF;
+              margin: 10px;
+              padding: 10px;
+              border: 1px solid #E6E6E6;
+            }
+            
+            body.pdf > #main {
+              border: none;
+            }
+            
+            #container > header {
+              padding-top: 6em;
+              padding-bottom: 1em;
+            }
+            
+            body.pdf #container > header {
+              padding: 0;
+            }
+            
+            #main > #container > section {
+              margin-left: 150px;
+              position: relative;
+              display: block;
+            }
+            
+            section > div {
+              margin-bottom: 60px;
+            }
+            
+            span.fa
+            {
+              font-size: 56px;
+              position: absolute;
+              top: 37px;
+              transform: translateY(-50%);
+              left: -100px;
+              color: #1a4367;
+            }
+            
+            hr {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              border: 0;
+              border-top: 1px solid #EEE;
+            }
+            
+            .tenure, .keywords {
+              font-size: 75%;
+            }
+            
+            h1 {
+              margin: 0;
+              font-size: 46px;
               display: inline-block;
+            }
+            
+            h2 {
+              font-size: 30px;
+              color: #4376a2;
+              text-transform: uppercase;
+              font-weight: normal;
+              padding-top: 20px;
+              margin-bottom: 60px;
+            }
+            
+            h3 {
+              margin-bottom: 0;
+              font-size: 18px;
+            }
+            
+            a, a:visited {
+              color: #428BCA;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            
+            a:hover {
+              text-decoration: underline;
+            }
+            
+            .defunct {
+              color: #989898;
+              font-weight: bold;
+            }
+            
+            #summary {
+              font-size: 150%;
+              margin-left: 0;
+              padding: 20px 0;
+            }
+            
+            #summary > p > strong {
+              font-size: 1.25em;
+            }
+            
+            #contact {
+              float: right;
+            }
+            
+            #summary > header > .fa-info {
+              font-size: 70px;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font-weight: normal;
+              top: 50%;
+              left: -85px;
+              transform: translateY(-50%);
+            }
+            
+            #summary h2 {
+              display: none;
+            }
+            
+            
+            .label-keyword {
+              display: inline-block;
+              background: #e8f4ff;
+              color: black;
+              font-size: 0.9em;
+              padding: 5px;
+              border: 1px solid #357ebd;
+              border-radius: 5px;
+              margin-top: 2px;
+              font-weight: bold;
+              text-align: center;
+            }
+            
+            .notes {
+              font-size: 10px;
+              display: block;
+              font-weight: normal;
+              text-transform: uppercase;
+            }
+            
+            .card-skills {
+                position: relative;
+            }
+            .card-nested {
+                min-height: 0;
+                margin-bottom: 10px;
+                border-width: 1px 0 0 0;
+            }
+            .card {
+                background: #FFF;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            
+            .skill-level {
+              border-radius: 3px;
+              position: absolute;
+              top: 10px;
+              bottom: 10px;
+              left: 0;
+              width: 10px;
+              box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+            }
+            .skill-level .skill-progress {
+              position: absolute;
+              border-radius: 3px;
+              bottom: 0;
+              width: 100%;
+              -webkit-transition: height 1s ease;
+            }
+            .skill-level .skill-progress.beginner {
+              height: 50%;
+              background: #e74c3c;
+            }
+            .skill-level .skill-progress.intermediate {
+              height: 70%;
+              background: #f1c40f;
+            }
+            .skill-level .skill-progress.advanced {
+              height: 80%;
+              background: #428bca;
+            }
+            .skill-level .skill-progress.master {
+              height: 95%;
+              background: #5cb85c;
+            }
+            .skill-info {
+              margin-left: 10px;
+            }
+            @media (max-width: 480px) {
+              .skill-info {
+                margin-left: 20px;
+              }
+            }
+            .skill-info > strong {
+              font-weight: 400;
+              font-size: 24px;
+              color: #1d1d1d;
+              line-height: 24px;
+            }
+            
+            .list-unstyled {
+              padding-left: 0;
+              list-style: none;
+            }
+            
+            .card-skills {
+              position: relative;
+            }
+            
+            .space-top {
+                margin-top: 5px;
+            }
+            
+            #container {
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            #elevator-pitch {
+              text-align: center;
+              font-size: 24px;
+              color: #BFC1C3;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+            
+            .res-label {
+              font-style: italic;
             }
         </style>
     </head>
     
     <body>
-        <div class="container">
-            <header>
-                 <h1>Baptiste Pesquet</h1>
-                 <h4><span class="fa fa-fw fa-map-marker"></span>&nbsp;Bordeaux, FR</h4>
-                 <h4><span class="fa fa-fw fa-envelope"></span>&nbsp;<a href="mailto:bpesquet@gmail.com">bpesquet@gmail.com</a></h4>
-                 <h4><span class="fa fa-fw fa-link"></span>&nbsp;<a href="http://bpesquet.com">http://bpesquet.com</a></h4>
-            </header>
-            <hr>
-            <section class="row">
-                 <h3 class="col-md-3"><span class="fa fa-fw fa-user"></span>&nbsp;A propos</h3>
-                <div class="col-md-9">Ingénieur et professeur agrégé, j&#39;enseigne l&#39;informatique et ses
-                    applications à l&#39;<a href="https://ensc.bordeaux-inp.fr/fr">Ecole Nationale Supérieure de Cognitique</a>.</div>
-            </section>
-            <hr>
-            <section class="row">
-                 <h3 class="col-md-3"><span class="fa fa-fw fa-code"></span>&nbsp;Compétences</h3>
-                <div class="col-md-9">
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Programmation</strong></h4>
-                         <h4 class="col-md-9">
-
-                  <span class="label label-primary">Java</span>
-
-                  <span class="label label-primary">C#</span>
-
-                  <span class="label label-primary">C++</span>
-
-                  <span class="label label-primary">UML</span>
-
-                  <span class="label label-primary">Design Patterns</span>
-
-                  <span class="label label-primary">Multithreading</span>
-
-            </h4>
+        <main id="main">
+            <div id="container">
+                <header>
+                     <h1>Baptiste Pesquet</h1>
+                    <div id="contact">
+                        <div class="email"><a href="mailto:baptiste.pesquet [at] ensc.fr">baptiste.pesquet [at] ensc.fr</a>
+                        </div>
+                        <div class="website"><a href="http://bpesquet.fr">http://bpesquet.fr</a>
+                        </div>
                     </div>
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Web</strong></h4>
-                         <h4 class="col-md-9">
+                </header>
+                <hr>
+                <section id="summary">
+                    <header> <span class="fa fa-lg fa-info"></span> 
+                         <h2>info</h2>
 
-                  <span class="label label-primary">JavaScript</span>
-
-                  <span class="label label-primary">PHP</span>
-
-                  <span class="label label-primary">HTML</span>
-
-                  <span class="label label-primary">CSS</span>
-
-                  <span class="label label-primary">Bootstrap</span>
-
-                  <span class="label label-primary">Silex</span>
-
-                  <span class="label label-primary">Symfony</span>
-
-            </h4>
-                    </div>
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Mobile</strong></h4>
-                         <h4 class="col-md-9">
-
-                  <span class="label label-primary">Cordova</span>
-
-                  <span class="label label-primary">Android</span>
-
-            </h4>
-                    </div>
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Données</strong></h4>
-                         <h4 class="col-md-9">
-
-                  <span class="label label-primary">SQL92</span>
-
-                  <span class="label label-primary">ORACLE</span>
-
-                  <span class="label label-primary">MySQL</span>
-
-                  <span class="label label-primary">PostgreSQL</span>
-
-                  <span class="label label-primary">ORM</span>
-
-                  <span class="label label-primary">Hibernate</span>
-
-            </h4>
-                    </div>
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Projet</strong></h4>
-                         <h4 class="col-md-9">
-
-                  <span class="label label-primary">Agilité</span>
-
-                  <span class="label label-primary">SCRUM</span>
-
-                  <span class="label label-primary">Git</span>
-
-                  <span class="label label-primary">GitHub</span>
-
-                  <span class="label label-primary">TFS</span>
-
-            </h4>
-                    </div>
-                    <div class="row">
-                         <h4 class="col-md-3"><strong>Réseau</strong></h4>
-                         <h4 class="col-md-9">
-
-                  <span class="label label-primary">OSI</span>
-
-                  <span class="label label-primary">Ethernet</span>
-
-                  <span class="label label-primary">TCP/IP</span>
-
-            </h4>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section class="row">
-                 <h3 class="col-md-3"><span class="fa fa-fw fa-building"></span>&nbsp;Expérience</h3>
-                <div class="col-md-9">
-                     <h4><strong>Enseignant en informatique</strong>, <a href="https://ensc.bordeaux-inp.fr/fr">Ecole Nationale Supérieure de Cognitique</a></h4>2016-09&mdash;2017-06
-                    <p>Principaux enseignements : bases de la programmation, programmation avancée,
-                        génie logiciel.</p>
-                    <div>&nbsp;</div>
-                     <h4><strong>Enseignant en informatique</strong>, Education Nationale</h4>2006-09&mdash;2016-08
-                    <p>Principaux enseignements : bases de la programmation, programmation orientée
-                        objet, architecture logicielle, développement Web et mobile, bases de données.</p>
-                    <ul>
-                        <li>Lauréat du CAPET externe économie/gestion option informatique en 2005</li>
-                        <li>Professeur en BTS Informatique de Gestion puis BTS Services Informatiques
-                            aux Organisations option SLAM : <a href="http://www.lycee-mathias.fr/">lycée Mathias</a> en
-                            2006, <a href="http://douanier-rousseau.paysdelaloire.e-lyco.fr/">lycée Douanier Rousseau</a> de
-                            2007 à 2009, <a href="http://www.martiniere-duchere.fr/">lycée La Martinière Duchère</a> depuis
-                            2009</li>
-                        <li>Major de l&#39;agrégation externe économie/gestion option informatique
-                            en 2008</li>
-                        <li>Intervenant à <a href="http://polytech.univ-lyon1.fr/">Polytech Lyon</a> depuis
-                            2009 et à <a href="https://www.sciencespo-lyon.fr/">Sciences Po Lyon</a> en
-                            2009</li>
-                        <li>Formateur académique depuis 2014</li>
-                        <li>Membre du jury du CAPET interne économie/gestion option informatique depuis
-                            2016</li>
-                    </ul>
-                    <div>&nbsp;</div>
-                     <h4><strong>Ingénieur informaticien</strong>, <a href="http://www.artal.fr/">Artal</a></h4>1999-09&mdash;2006-08
-                    <p>Fonctions occupées : développeur, concepteur, architecte logiciel, responsable
-                        technique, chef de projet.</p>
-                    <ul>
-                        <li>Pour <a href="https://www.alcatel-lucent.com/fr">Alcatel Space</a> : projets
-                            LMO2 et eCSM, test de charge utile satellite et supervision de trafic antenne</li>
-                        <li>Pour <a href="http://www.airbus.com/">Airbus</a> : projet TARDIS, gestion
-                            des données de soufflerie avion</li>
-                        <li>Pour <a href="http://www.space-airbusds.com/">Astrium</a> : projets BIBOG,
-                            SIFEC et SOC, composants du centre de contrôle du satellite Hélios II</li>
-                    </ul>
-                </div>
-            </section>
-            <hr>
-            <section class="row">
-                 <h3 class="col-md-3"><span class="fa fa-fw fa-mortar-board"></span>&nbsp;Formation</h3>
-                <div class="col-md-9">
-                     <h4><strong>Ingénieur en informatique</strong>, <a href="http://www.ensiie.fr">ENSIIE</a></h4>
-                     <h5>Evry, FR</h5>1996-09&mdash;1999-07
-                    <ul>
-                        <li>École d’ingénieurs recrutant sur le concours Mines-Telecom</li>
-                        <li>Spécialisations en développement objet et intelligence artificielle</li>
-                        <li>Stage de fin d&#39;études effectué à l&#39;<a href="https://www.irit.fr/">IRIT</a> de
-                            Toulouse : création d&#39;une équipe de robots footballeurs auto-organisés
-                            et participation à la <a href="http://www.robocup.org/">RoboCup</a>
+                    </header>Ingénieur et professeur agrégé, j&#39;enseigne l&#39;informatique et l&#39;intelligence
+                    artificielle à l&#39;<a href="https://ensc.bordeaux-inp.fr/fr">Ecole Nationale Supérieure de Cognitique</a>.</section>
+                <hr>
+                <section id="skills">
+                    <header>
+                         <h2>Compétences techniques</h2>
+                    </header> <span class="fa fa-lg fa-code"></span>
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+                                <div class="skill-progress intermediate"></div>
+                            </div>
+                            <div class="skill-info"> <strong>IA et Data Science</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Machine Learning</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Réseaux de neurones</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Deep Learning</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Python</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">NumPy</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Keras</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="master" data-placement="left">
+                                <div class="skill-progress master"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Développement logiciel</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">C#</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Java</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">C++</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">UML</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Design Patterns</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">ORM</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Multithreading</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Web et mobile</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">JavaScript</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Node.js</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">React.js</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">React Native</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">PHP</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">HTML</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+                                <div class="skill-progress intermediate"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Base de données</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">SQL92</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">ORACLE</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">MySQL</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">PostgreSQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+                                <div class="skill-progress intermediate"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Gestion de projet</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Agilité</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">SCRUM</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Git</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">GitHub</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">TFS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="intermediate" data-placement="left">
+                                <div class="skill-progress intermediate"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Réseau et système</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">TCP/IP</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Ethernet</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">OSI</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Windows</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">OS X</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                    <div>&nbsp;</div>
-                     <h4><strong>Classes préparatoires aux grandes écoles</strong>, <a href="http://lgcorneille-lyc.spip.ac-rouen.fr">Lycée Pierre Corneille</a></h4>
-                     <h5>Rouen, FR</h5>1994-09&mdash;1996-07
-                    <ul>
-                        <li>Math Sup / Math Spé M</li>
-                    </ul>
-                    <div>&nbsp;</div>
-                     <h4><strong>Terminale scientifique</strong>, <a href="http://ango-lyc.spip.ac-rouen.fr">Lycée Jehan Ango</a></h4>
-                     <h5>Dieppe, FR</h5>1993-09&mdash;1994-07
-                    <ul>
-                        <li>Baccalauréat C obtenu avec mention Bien</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+                </section>
+                <hr>
+                <section id="employment">
+                    <header> <span class="fa fa-lg fa-building"></span> 
+                         <h2>Expérience</h2>
+
+                    </header>
+                    <div>
+                         <h3><em>Enseignant en informatique et intelligence artificielle</em>,
+
+    <a href="https://ensc.bordeaux-inp.fr/fr">ENSC - Bordeaux INP</a>
+
+    </h3> <span class="tenure">2016-09 — Present</span>
+                        <p>
+                            <p>Conception et animation de cours, accompagnement pédagogique, suivi de
+                                stages et de projets.</p>
+                        </p>
+                        <ul>
+                            <li>Porteur d&#39;un projet de plate-forme pédagogique sur le Deep Learning
+                                soutenu par l&#39;INP en 2018.</li>
+                            <li>Co-responsable de la semaine de spécialisation en IA depuis 2018.</li>
+                            <li>Pilotage des modules Génie logiciel depuis 2017 et Développement mobile
+                                depuis 2018.</li>
+                            <li>Responsable de la 2ème année depuis 2017.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Enseignant en informatique</em>,
+
+    Education Nationale
+
+    </h3> <span class="tenure">2006-09 — 2016-09</span>
+                        <p>
+                            <p>Professeur en BTS Informatique de Gestion puis en BTS Services Informatiques
+                                aux Organisations.</p>
+                        </p>
+                        <ul>
+                            <li>Membre du jury du CAPET interne économie/gestion option informatique depuis
+                                2016.</li>
+                            <li>Formateur académique sur les pédagogies actives et les outils numériques
+                                de 2014 à 2016.</li>
+                            <li>Intervenant à <a href="http://polytech.univ-lyon1.fr/">Polytech Lyon</a> de
+                                2009 à 2016 et à <a href="https://www.sciencespo-lyon.fr/">Sciences Po Lyon</a> en
+                                2009.</li>
+                            <li>Major de l&#39;agrégation externe économie/gestion option informatique
+                                en 2008.</li>
+                            <li>Lauréat du CAPET externe économie/gestion option informatique en 2005.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Ingénieur informaticien</em>,
+
+    <a href="http://www.artal.fr/">Artal Technologies</a>
+
+    </h3> <span class="tenure">1999-09 — 2006-09</span>
+                        <p>
+                            <p>Développeur, concepteur, architecte logiciel, responsable technique, chef
+                                de projet.</p>
+                        </p>
+                        <ul>
+                            <li><a href="https://www.alcatel-lucent.com/fr">Alcatel Space</a> - projets
+                                LMO2 et eCSM : test de charge utile satellite et supervision de trafic
+                                antenne.</li>
+                            <li><a href="http://www.airbus.com/">Airbus</a> - projet TARDIS : gestion des
+                                données de soufflerie avion.</li>
+                            <li><a href="http://www.space-airbusds.com/">Astrium</a> - projets BIBOG, SIFEC
+                                et SOC : composants du centre de contrôle du satellite Hélios II.</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr>
+                <section id="projects">
+                    <header> <span class="fa fa-lg fa-star"></span> 
+                         <h2>Projets</h2>
+
+                    </header>
+                    <div>
+                        
+<h3><em>Creator</em>,
+
+<a href="https://github.com/bpesquet/deep-learning-workshop">Deep Learning Workshop</a>
+
+</h3>
+<span class="tenure">2018-01 — Present</span>
+                        <p>Atelier d&#39;introduction au Deep Learning avec exercices autocorrectifs.</p>
+                    </div>
+                    <div>
+                        
+<h3><em>Author</em>,
+
+<a href="https://github.com/bpesquet/thejsway">The JavaScript Way</a>
+
+</h3>
+<span class="tenure">2017-07 — Present</span>
+                        <p>Une introduction moderne à un langage essentiel.</p>
+                    </div>
+                </section>
+                <hr>
+                <section id="education">
+                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
+                         <h2>Formation</h2>
+
+                    </header>
+                    <div>
+                        
+<h3>
+
+<a href="http://www.ensiie.fr">ENSIIE, Evry</a>
+
+</h3>
+<span class="tenure">1996-09 — 1999-07</span>
+                        <p>École d’ingénieurs en informatique recrutant sur le concours Mines-Telecom.</p>
+                        <ul>
+                            <li>Spécialisations en développement objet et intelligence artificielle.</li>
+                            <li>Stage de fin d&#39;études effectué à l&#39;<a href="https://www.irit.fr/">IRIT</a> de
+                                Toulouse : création d&#39;une équipe de robots footballeurs auto-organisés
+                                et participation à la <a href="http://www.robocup.org/">RoboCup 1999</a>.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        
+<h3>
+
+<a href="http://lgcorneille-lyc.spip.ac-rouen.fr">Lycée Pierre Corneille, Rouen</a>
+
+</h3>
+<span class="tenure">1994-09 — 1996-07</span>| <span class="keywords">Math Sup / Math Spé M. </span>
+                    </div>
+                    <div>
+                        
+<h3>
+
+<a href="http://ango-lyc.spip.ac-rouen.fr">Lycée Jehan Ango, Dieppe</a>
+
+</h3>
+<span class="tenure">1993-09 — 1994-07</span>| <span class="keywords">Baccalauréat C obtenu avec mention Bien. </span>
+                    </div>
+                </section>
+            </div>
+        </main>
     </body>
 
 </html>
