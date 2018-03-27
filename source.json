@@ -74,7 +74,7 @@
         ]
       },
       {
-        "name": "Base de données",
+        "name": "Bases de données",
         "level": "intermediate",
         "skills": [
           "SQL92",
@@ -158,7 +158,7 @@
     {
       "title": "Deep Learning Workshop",
       "category": "FOSS",
-      "role": "Creator",
+      "role": "Créateur",
       "url": "https://github.com/bpesquet/deep-learning-workshop",
       "start": "2018-01",
       "repo": "https://github.com/bpesquet/deep-learning-workshop",
@@ -167,7 +167,7 @@
     {
       "title": "The JavaScript Way",
       "category": "book",
-      "role": "Author",
+      "role": "Auteur",
       "url": "https://github.com/bpesquet/thejsway",
       "start": "2017-07",
       "repo": "https://github.com/bpesquet/thejsway",
