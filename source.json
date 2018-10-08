@@ -10,8 +10,8 @@
     "brief": "Ingénieur et professeur agrégé, j'enseigne l'informatique et l'intelligence artificielle à l'[Ecole Nationale Supérieure de Cognitique](https://ensc.bordeaux-inp.fr/fr)."
   },
   "contact": {
-    "website": "http://bpesquet.fr",
-    "email": "baptiste.pesquet [at] ensc.fr"
+    "website": "https://www.bpesquet.fr",
+    "email": "bpesquet@gmail.com"
   },
   "location": {
     "address": "",
@@ -44,6 +44,7 @@
           "Deep Learning",
           "Python",
           "NumPy",
+          "scikit-learn",
           "Keras"
         ]
       },
@@ -162,7 +163,7 @@
       "url": "https://github.com/bpesquet/deep-learning-workshop",
       "start": "2018-01",
       "repo": "https://github.com/bpesquet/deep-learning-workshop",
-      "summary": "Atelier d'introduction au Deep Learning avec exercices autocorrectifs."
+      "summary": "Atelier de découverte du Deep Learning avec exercices autocorrectifs."
     },
     {
       "title": "The JavaScript Way",
@@ -171,7 +172,7 @@
       "url": "https://github.com/bpesquet/thejsway",
       "start": "2017-07",
       "repo": "https://github.com/bpesquet/thejsway",
-      "summary": "Une introduction moderne à un langage essentiel."
+      "summary": "Livre d'introduction au JavaScript moderne."
     }
   ],
   "education": {
