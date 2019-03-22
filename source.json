@@ -77,35 +77,17 @@
       {
         "name": "Bases de données",
         "level": "intermediate",
-        "skills": [
-          "SQL92",
-          "ORACLE",
-          "MySQL",
-          "PostgreSQL"
-        ]
+        "skills": ["SQL92", "ORACLE", "MySQL", "PostgreSQL"]
       },
       {
         "name": "Gestion de projet",
         "level": "intermediate",
-        "skills": [
-          "Agilité",
-          "SCRUM",
-          "Git",
-          "GitHub",
-          "TFS"
-        ]
+        "skills": ["Agilité", "SCRUM", "Git", "GitHub", "TFS"]
       },
       {
         "name": "Réseau et système",
         "level": "intermediate",
-        "skills": [
-          "TCP/IP",
-          "Ethernet",
-          "OSI",
-          "Windows",
-          "OS X",
-          "Linux"
-        ]
+        "skills": ["TCP/IP", "Ethernet", "OSI", "Windows", "OS X", "Linux"]
       }
     ],
     "list": []
@@ -157,13 +139,22 @@
   },
   "projects": [
     {
-      "title": "Deep Learning Workshop",
+      "title": "Machine Learning Handbook",
       "category": "FOSS",
       "role": "Créateur",
-      "url": "https://github.com/bpesquet/deep-learning-workshop",
-      "start": "2018-01",
-      "repo": "https://github.com/bpesquet/deep-learning-workshop",
-      "summary": "Atelier de découverte du Deep Learning avec exercices autocorrectifs."
+      "url": "https://github.com/bpesquet/machine-learning-handbook",
+      "start": "2019-01",
+      "repo": "https://github.com/bpesquet/machine-learning-handbook",
+      "summary": "Aperçu des principaux algorithmes de Machine Learning et de Deep Learning."
+    },
+    {
+      "title": "Machine Learning Katas",
+      "category": "FOSS",
+      "role": "Créateur",
+      "url": "https://github.com/bpesquet/machine-learning-katas",
+      "start": "2019-01",
+      "repo": "https://github.com/bpesquet/machine-learning-katas",
+      "summary": "Exercices autocorrectifs de Machine Learning et de Deep Learning."
     },
     {
       "title": "The JavaScript Way",
@@ -201,9 +192,7 @@
         "start": "1994-09",
         "end": "1996-07",
         "summary": "",
-        "curriculum": [
-          "Math Sup / Math Spé M."
-        ]
+        "curriculum": ["Math Sup / Math Spé M."]
       },
       {
         "institution": "Lycée Jehan Ango, Dieppe",
@@ -213,9 +202,7 @@
         "start": "1993-09",
         "end": "1994-07",
         "summary": "",
-        "curriculum": [
-          "Baccalauréat C obtenu avec mention Bien."
-        ]
+        "curriculum": ["Baccalauréat C obtenu avec mention Bien."]
       }
     ]
   }
