@@ -37,15 +37,15 @@
     "sets": [
       {
         "name": "IA et Data Science",
-        "level": "intermediate",
+        "level": "advanced",
         "skills": [
           "Machine Learning",
-          "Réseaux de neurones",
           "Deep Learning",
           "Python",
           "NumPy",
           "scikit-learn",
-          "Keras"
+          "TF/Keras",
+          "PyTorch"
         ]
       },
       {
@@ -57,7 +57,7 @@
           "C++",
           "UML",
           "Design Patterns",
-          "ORM",
+          "O/RM",
           "Multithreading"
         ]
       },
@@ -77,12 +77,17 @@
       {
         "name": "Bases de données",
         "level": "intermediate",
-        "skills": ["SQL92", "ORACLE", "MySQL", "PostgreSQL"]
+        "skills": ["SQL92", "ORACLE", "MySQL/MariaDB", "PostgreSQL"]
+      },
+      {
+        "name": "Gestion de version",
+        "level": "advanced",
+        "skills": ["Git", "GitHub", "TFS", "ClearCase"]
       },
       {
         "name": "Gestion de projet",
         "level": "intermediate",
-        "skills": ["Agilité", "SCRUM", "Git", "GitHub", "TFS"]
+        "skills": ["Agilité", "SCRUM", "Trello"]
       },
       {
         "name": "Réseau et système",
@@ -97,15 +102,15 @@
     "history": [
       {
         "employer": "ENSC - Bordeaux INP",
-        "url": "https://ensc.bordeaux-inp.fr/fr",
+        "url": "https://ensc.bordeaux-inp.fr/",
         "position": "Enseignant en informatique et intelligence artificielle",
         "summary": "Conception et animation de cours, accompagnement pédagogique, suivi de stages et de projets.",
         "start": "2016-09",
         "highlights": [
+          "Co-créateur et responsable de la spécialisation en IA commune à l'ENSC et l'ENSEIRB-MATMECA depuis 2019.",
           "Porteur d'un projet de plate-forme pédagogique sur le Deep Learning soutenu par l'INP en 2018.",
-          "Co-responsable de la semaine de spécialisation en IA depuis 2018.",
-          "Pilotage des modules Génie logiciel depuis 2017 et Développement mobile depuis 2018.",
-          "Responsable de la 2ème année depuis 2017."
+          "Responsable des modules Génie logiciel depuis 2017 et Développement mobile depuis 2018.",
+          "Responsable de la deuxième année depuis 2017."
         ]
       },
       {
@@ -115,7 +120,7 @@
         "start": "2006-09",
         "end": "2016-09",
         "highlights": [
-          "Membre du jury du CAPET interne économie/gestion option informatique depuis 2016.",
+          "Membre du jury du CAPET interne économie/gestion option informatique de 2016 à 2019.",
           "Formateur académique sur les pédagogies actives et les outils numériques de 2014 à 2016.",
           "Intervenant à [Polytech Lyon](http://polytech.univ-lyon1.fr/) de 2009 à 2016 et à [Sciences Po Lyon](https://www.sciencespo-lyon.fr/) en 2009.",
           "Major de l'agrégation externe économie/gestion option informatique en 2008.",
@@ -139,22 +144,13 @@
   },
   "projects": [
     {
-      "title": "Machine Learning Handbook",
-      "category": "FOSS",
-      "role": "Créateur",
-      "url": "https://github.com/bpesquet/machine-learning-handbook",
-      "start": "2019-01",
-      "repo": "https://github.com/bpesquet/machine-learning-handbook",
-      "summary": "Aperçu des principaux algorithmes de Machine Learning et de Deep Learning."
-    },
-    {
       "title": "Machine Learning Katas",
       "category": "FOSS",
       "role": "Créateur",
       "url": "https://github.com/bpesquet/machine-learning-katas",
       "start": "2019-01",
       "repo": "https://github.com/bpesquet/machine-learning-katas",
-      "summary": "Exercices autocorrectifs de Machine Learning et de Deep Learning."
+      "summary": "Théorie, exemples et exercices autocorrectifs de Machine Learning et de Deep Learning."
     },
     {
       "title": "The JavaScript Way",
