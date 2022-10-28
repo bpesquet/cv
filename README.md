@@ -1,3 +1,5 @@
+> Obsolète, remplacé par [ce dépôt](https://github.com/bpesquet/resume).
+
 # Mon CV
 
 Mon CV, créé avec [HackMyResume](http://please.hackmyresume.com/).
